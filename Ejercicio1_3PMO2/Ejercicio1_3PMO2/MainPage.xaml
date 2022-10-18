@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_3PMO2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="20" CornerRadius="0">
+            <Label Text="Vivian y Jonathan" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+        </Frame>
+        <Label Text="Ingrese un nombre:" FontSize="16"/>
+
+        <Entry x:Name="txtnombre" Keyboard="Text" Text="{Binding nombre}" Margin="5" FontSize="16"/>
+        <Label Text="Ingrese un apellido:" FontSize="16"/>
+
+        <Entry x:Name="txtapellido" Keyboard="Text" Text="{Binding apellidos}" Margin="5" FontSize="16"/>
+        <Label Text="Ingrese la edad:" FontSize="16"/>
+
+        <Entry x:Name="txtedad" Keyboard="Numeric" Text="{Binding edad}" Margin="5" FontSize="16"/>
+        <Label Text="Ingrese un correo electrónico:" FontSize="16"/>
+
+        <Entry x:Name="txtcorreo" Keyboard="Email" Text="{Binding correo}" Margin="5" FontSize="16"/>
+        <Label Text="Ingrese una dirección:" FontSize="16"/>
+
+        <Entry x:Name="txtdireccion" Keyboard="Text" Text="{Binding direccion}" Margin="5" FontSize="16"/>
+
+        
+        <Button x:Name="btnagregar" Text="Guardar" Clicked="btnagregar_Clicked" Margin="10" BackgroundColor="GreenYellow" FontSize="18"/>
+          
+       
+
+    </StackLayout>
+
+</ContentPage>

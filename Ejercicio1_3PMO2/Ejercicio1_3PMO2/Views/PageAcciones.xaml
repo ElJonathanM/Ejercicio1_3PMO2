@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_3PMO2.Views.PageEliminar">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Código" FontSize="16"/>
+            <Entry x:Name="txtid" Placeholder="Codigo" Keyboard="Text" Text="{Binding id}" IsEnabled="False"/>
+            <Label Text="Ingrese un nombre:" FontSize="16"/>
+
+            <Entry x:Name="txtnombre" Keyboard="Text" Text="{Binding nombre}" Margin="5" FontSize="16"/>
+            <Label Text="Ingrese un apellido:" FontSize="16"/>
+
+            <Entry x:Name="txtapellido" Keyboard="Text" Text="{Binding apellidos}" Margin="5" FontSize="16"/>
+            <Label Text="Ingrese la edad:" FontSize="16"/>
+
+            <Entry x:Name="txtedad" Keyboard="Numeric" Text="{Binding edad}" Margin="5" FontSize="16"/>
+            <Label Text="Ingrese un correo electrónico:" FontSize="16"/>
+
+            <Entry x:Name="txtcorreo" Keyboard="Email" Text="{Binding correo}" Margin="5" FontSize="16"/>
+            <Label Text="Ingrese una dirección:" FontSize="16"/>
+
+            <Entry x:Name="txtdireccion" Keyboard="Text" Text="{Binding direccion}" Margin="5" FontSize="16"/>
+
+            
+                <Button Grid.Column="2" x:Name="btnborrar" Text="Eliminar" Clicked="btnborrar_Clicked" Margin="10" BackgroundColor="GreenYellow" FontSize="18"/>
+            <Button Grid.Column="1" x:Name="btnactualizar" Text="Actualizar" Clicked="btnactualizar_Clicked" Margin="10" BackgroundColor="GreenYellow" FontSize="18"/>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
